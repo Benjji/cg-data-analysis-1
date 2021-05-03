@@ -16,7 +16,7 @@ First let us do it for tumor read files.
     samtools sort -T temp -O bam -o tumor.sorted.bam tumor.bam
     samtools index tumor.sorted.bam
 
-In the same way, we do it for wildcard files.
+In the same way, we do it for wildtype files.
 
     bwa mem GCA_000001405.28_GRCh38.p13_genomic.fna.gz  wt.r1.fq.gz wt.r2.fq.gz > wildtype.sam
     samtools view -O BAM -o wildtype.bam wildtype.sam
